@@ -6,11 +6,12 @@
 function sumFromNtoM(n, m) {
     let firstNum = Number(n);
     let SecondNum = Number(m);
-  let result = 0;
-    for(let i =n; i <= m; i++) {
-       result+=i
+    let result = 0;
+    for (let i = firstNum; i <= SecondNum; i++) {
+        result += i
     }
+
     return result;
 }
 
-console.log(sumFromNtoM(-8,20)) //174 correct
+console.log(sumFromNtoM(1, 5)) //174 correct
