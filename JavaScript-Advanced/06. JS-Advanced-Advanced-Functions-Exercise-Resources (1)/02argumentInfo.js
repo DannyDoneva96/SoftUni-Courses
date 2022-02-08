@@ -9,7 +9,7 @@ function argumentInfo(...param){
      Object.keys(result2).sort((a,b) =>result2[b] - result2[a])
      .forEach(key => result.push(`${key} = ${result2[key]}`));
 
-    console.log(result.join('\n'));
+    return result.join('\n');
   
 
 }argumentInfo('cat', 42,24, function () { console.log('Hello world!'); })
