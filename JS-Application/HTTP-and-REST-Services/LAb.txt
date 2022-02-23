@@ -1,0 +1,4 @@
+HTTP - hyper text transfer protocol
+http methods - get,post,put,delete,patch,head and others
+HTTP GET request example- GET/users/testnakov/repos HTTP/1.1
+                           Host:api.github.com
