@@ -1,5 +1,5 @@
 function attachEvents() {
- document.getElementById('refresh').addEventListener('click',leadMessage);
+ document.getElementById('refresh').addEventListener('click',loadMessage);
 
 document.getElementById('submit').addEventListener('click',submitMessage);
 
@@ -20,14 +20,14 @@ async function submitMessage(){
 
 }
 
-async function leadMessage() {
+async function loadMessage() {
     let url = 'http://localhost:3030/jsonstore/messenger';
 
     let res = await fetch(url);
     let data = await res.json();
      let messages = Object.values(data)
      let list = document.getElementById('messages');
-
+      console.log(await list.value);
      list.value = messages.map(message =>`${message.author}: ${message.content}`).join('\n');
 }
 async function createMessage(message){
