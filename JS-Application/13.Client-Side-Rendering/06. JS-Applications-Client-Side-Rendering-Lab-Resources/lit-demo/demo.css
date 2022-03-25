@@ -1,0 +1,23 @@
+body {
+    width: 980px;
+    margin: auto;
+    font-size: 24px;
+}
+
+article {
+ margin: 32px 0;
+ box-shadow: 0 0 15px 5px #3f0741 ;
+ padding: 32px;
+}
+
+article footer {
+    color: #420242;
+}
+
+article h3 {
+    color: #801e9e;
+}
+body h1 {
+    color:#6e0ea7;
+     text-shadow: #acc51b;
+}
