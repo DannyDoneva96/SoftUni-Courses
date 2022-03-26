@@ -36,6 +36,5 @@ function onClick(e) {
    let needenEl= div.getElementsByClassName('details')
 
     needenEl[0].style.display="none" ? 'block':'none'
-    needenEl[0].style.display="none" ? 'block':'none'
 
 }
