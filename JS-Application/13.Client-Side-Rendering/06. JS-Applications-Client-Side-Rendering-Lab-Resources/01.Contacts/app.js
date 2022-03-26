@@ -34,7 +34,8 @@ function onClick(e) {
   
    let div =  e.target.parentNode.parentNode
    let needenEl= div.getElementsByClassName('details')
-
-    needenEl[0].style.display="none" ? 'block':'none'
+   if( needenEl[0].style.display=='none'){
+    needenEl[0].style.display="block"
+   }else { needenEl[0].style.display="none"}
 
 }
