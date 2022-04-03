@@ -23,17 +23,13 @@ function solution() {
   function submit(e) {
     if (name.value == '' || email.value == '') { return }
 
-    obj.name = name.value,
-      obj.email = email.value,
-      obj.phone = phone.value,
-      obj.address = address.value,
-      obj.code = code.value
+    obj.name = name.value.trim()
+      obj.email = email.value.trim()
+      obj.phone = phone.value.trim()
+      obj.address = address.value.trim()
+      obj.code = code.value.trim()
 
-    previewUl.innerHTML += `<li>Full Name: ${obj.name}</li>
-        <li>Email: ${obj.email}</li>
-        <li>Phone Number: ${obj.phone}</li>
-        <li>Adress: ${obj.address}</li>
-        <li>Postal Code: ${obj.code}</li>`
+    previewUl.innerHTML += `<li>Full Name: ${obj.name}</li><li>Email: ${obj.email}</li><li>Phone Number: ${obj.phone}</li><li>Adress: ${obj.address}</li><li>Postal Code: ${obj.code}</li>`
 
     submitBtn.disabled = true;
     editBtn.disabled = false;
@@ -45,18 +41,18 @@ function solution() {
     code.value = ''
   }
 
-function edit(e){
-  previewUl.innerHTML = '';
-  name.value = obj.name
-  email.value =obj.email
-  phone.value = obj.phone
-  address.value = obj.address
-  code.value = obj.code
+  function edit(e) {
+    previewUl.innerHTML = '';
+    name.value = obj.name
+    email.value = obj.email
+    phone.value = obj.phone
+    address.value = obj.address
+    code.value = obj.code
 
-  submitBtn.disabled = false;
-  editBtn.disabled = true;
-  continueBTN.disabled = true;
-}
+    submitBtn.disabled = false;
+    editBtn.disabled = true;
+    continueBTN.disabled = true;
+  }
 
 
 
