@@ -63,16 +63,9 @@ function solve() {
                 document.getElementById("salary").value=salary.textContent
 
                 trEl.remove()
-
-
-
             }
         }
     });
-
-
-
-
 
 }
 solve()
