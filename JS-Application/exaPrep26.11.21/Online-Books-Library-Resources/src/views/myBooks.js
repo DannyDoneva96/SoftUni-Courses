@@ -1,6 +1,7 @@
-import { getMyBooks } from '../api/data.js'
 import { html } from '../lib.js'
+import { getMybook } from '../api/data.js'
 import { getUserData } from '../util.js'
+
 
 const myBooksTemplate = (books) => html `
 <section id="my-books-page" class="my-books">
@@ -20,8 +21,9 @@ const bookPreview = (book) => html`
     <a class="button" href="/details/${book._id}">Details</a>
 </li>`
 
-export async function myBooksPage(ctx) {
+export async function MyBookPage(ctx) {
     const userData =  getUserData()
-    const books = await getMyBooks(userData.id)
-    ctx.render(myBooksTemplate(books))
+
+    const books = await getMybook(userData.id);
+    ctx.render(myBooksTemplate(books));
 }
