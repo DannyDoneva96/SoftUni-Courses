@@ -1,0 +1,14 @@
+body  {
+    background-image: url("./image/paper-cut-luxury-gold-background-metal-texture-3d-abstract-vector.jpg");
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+p {
+    font-style: italic;
+    color:rgb(255, 255, 255);
+    font-size: x-large;
+}
