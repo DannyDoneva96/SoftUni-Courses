@@ -5,10 +5,12 @@ body  {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
+    background-color:  #425254;
 }
 p {
     font-style: italic;
     color:rgb(255, 255, 255);
-    font-size: x-large;
+    font-size: 16px;
+    line-height: 1.5
 }
